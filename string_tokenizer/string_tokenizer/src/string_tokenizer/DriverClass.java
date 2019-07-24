@@ -9,8 +9,9 @@ public class DriverClass {
 
     public static void main(String[] args) {
         
-        String inputFile = "string_tokanizer_input.txt";
-        String outputFile = "/Users/gauris/NetBeansProjects/string_tokenizer/output.txt";
+        System.out.println("process starting..");
+        String inputFile = System.getProperty("user.dir")+"/string_tokanizer_input.txt";
+        String outputFile = System.getProperty("user.dir")+"/output.txt";
         ProcessorClass.process(inputFile,outputFile);
 
     }
